@@ -1,7 +1,7 @@
 import { useState , useEffect } from "react";
 import "./App.css";
 
-const API = "http://localhost:8080";
+const API = "https://livepoll-backend-hvho.onrender.com";
 const POLL_ID = "6aae4752cb7d5ce14f48e085";
 
 function App() {
