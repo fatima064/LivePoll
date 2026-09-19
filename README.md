@@ -5,7 +5,7 @@ A real-time polling application where users can create polls, vote on options, a
 ## 🚀 Live Demo
 
 **Live Application:**  
-https://live-poll-fxjxvsdgs-fatima-f9f7.vercel.app
+https://live-poll-pearl.vercel.app/
 
 **GitHub Repository:**  
 https://github.com/fatima064/LivePoll
