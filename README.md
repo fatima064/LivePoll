@@ -84,7 +84,7 @@ The main focus of the project is implementing real-time updates using **Redis Pu
 ---
 
 ## 🔄 How Real-Time Voting Works
-
+```text
 The real-time voting flow works as follows:
 
 User votes
