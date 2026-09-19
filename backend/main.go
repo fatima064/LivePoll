@@ -86,12 +86,16 @@ func main() {
 
 	// ---------- Gin ----------
 	r := gin.Default()
+	frontendURL := os.Getenv("FRONTEND_URL")
+	if frontendURL == "" {
+		frontendURL = "http://localhost:5173"
+	}
 
 	// CORS
 	r.Use(func(c *gin.Context) {
 		c.Writer.Header().Set(
 			"Access-Control-Allow-Origin",
-			"http://localhost:5173",
+			frontendURL,
 		)
 		c.Writer.Header().Set(
 			"Access-Control-Allow-Headers",
@@ -128,7 +132,11 @@ func main() {
 	fmt.Println("👉 http://localhost:8080")
 	fmt.Println("=================================")
 
-	r.Run(":8080")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+	r.Run(":" + port)
 }
 
 // ---------------- SIGNUP ----------------
