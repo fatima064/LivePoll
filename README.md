@@ -25,7 +25,6 @@ The application allows users to:
 - Receive live vote count updates without refreshing the page
 - Access the application through a deployed public URL
 
-The main focus of the project is implementing real-time updates using **Redis Pub/Sub and Server-Sent Events (SSE)**.
 
 ---
 
